@@ -1,0 +1,5 @@
+INSERT INTO `warga` (`id`, `nokk`, `nik`, `nama`, `jk`, `ttl`, `kewarganegaraan`, `status`, `pendidikan`, `pekerjaan`, `agama`, `alamat`) VALUES (NULL, '32', '220413', 'Rinso', 'L', 'Bandung,7-4-2002', 'WNI', 'Belum nikah', 'S1', 'Pelajar', 'Islam', 'bandung')
+
+INSERT INTO rt (id,id_rt,nama,nik,id_rw) SELECT NULL,'3', nama, nik, id_rw FROM rw;
+
+INSERT INTO pengajuan (id,nama,nik,tanggal_dibuat,tanggal_selesai,nama_surat,izin_rt,izin_rw,izin_admin) SELECT NULL,'Angga Saeful', '12312', 'Tanggal',NULL, nama_surat,izin_rt,izin_rw,izin_admin FROM surat;

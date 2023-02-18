@@ -1,0 +1,61 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.login{
+  height: 100vh;
+}
+
+h1{
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #000000;
+}
+
+p{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000000;
+}
+
+.login-form label{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.login-form input{
+  background: #ffffff;
+  border: 1px solid #bcbcbcbc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.login-form a{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #737373;
+  margin:20px 0;
+  display: block;
+}
+
+.login-form .signin{
+  color: #ffffff;
+  border-radius: 8px ;
+  height: 42px;
+  width: 100%;
+  background-color: #00b1ff;
+  transition: border 0.2 ease;
+}
+
+.login-form .signin:hover{
+  border: 2px solid #81d9ff;
+  cursor: pointer;
+}
+
+
+
