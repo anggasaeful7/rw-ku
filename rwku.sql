@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Feb 2023 pada 04.50
+-- Waktu pembuatan: 19 Feb 2023 pada 06.41
 -- Versi server: 10.4.21-MariaDB-log
 -- Versi PHP: 8.0.10
 
@@ -82,18 +82,22 @@ CREATE TABLE `rt` (
   `id_rt` int(11) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `nik` varchar(11) NOT NULL,
-  `id_rw` int(11) NOT NULL
+  `id_rw` int(11) NOT NULL,
+  `alamat` varchar(50) NOT NULL,
+  `agama` varchar(50) NOT NULL,
+  `status` varchar(50) NOT NULL,
+  `pendidikan` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `rt`
 --
 
-INSERT INTO `rt` (`id`, `id_rt`, `nama`, `nik`, `id_rw`) VALUES
-(1, 1, 'Setyo Novanto', '32041300202', 1),
-(2, 2, 'Fajar Permana', '32041300201', 1),
-(3, 3, 'Rinso', '220413', 1),
-(4, 3, 'Rinso', '220413', 1);
+INSERT INTO `rt` (`id`, `id_rt`, `nama`, `nik`, `id_rw`, `alamat`, `agama`, `status`, `pendidikan`) VALUES
+(1, 2, 'Maguayer ', '320413', 1, 'Pontianak', 'Islam', 'Menikah', 'Islam'),
+(2, 1, 'Angga Saeful', '220413', 1, 'bandung', 'Islam', 'Belum nikah', 'S1'),
+(3, 2, 'Sudarmana', '32041300201', 1, 'Jakarta', 'Islam', 'Nikah', 'SMA'),
+(4, 4, 'Opek', '320413', 1, 'Jl. Banjaran kab andung no.58', 'Islam', 'Belum Menikah', 'Islam');
 
 --
 -- Trigger `rt`
@@ -115,15 +119,20 @@ CREATE TABLE `rw` (
   `id` int(11) NOT NULL,
   `id_rw` int(11) NOT NULL,
   `nama` varchar(50) NOT NULL,
-  `nik` varchar(11) NOT NULL
+  `nik` varchar(11) NOT NULL,
+  `alamat` varchar(50) NOT NULL,
+  `agama` varchar(50) NOT NULL,
+  `status` varchar(50) NOT NULL,
+  `pendidikan` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `rw`
 --
 
-INSERT INTO `rw` (`id`, `id_rw`, `nama`, `nik`) VALUES
-(1, 1, 'Rinso', '220413');
+INSERT INTO `rw` (`id`, `id_rw`, `nama`, `nik`, `alamat`, `agama`, `status`, `pendidikan`) VALUES
+(1, 1, 'Rinso', '220413', '', '', '', ''),
+(2, 5, 'Opek', '320413', 'bandung', 'Islam', 'Menikah', 'SD/Sederajat');
 
 --
 -- Trigger `rw`
@@ -217,7 +226,53 @@ INSERT INTO `user` (`id`, `username`, `password`, `level`) VALUES
 (3, 'rw', 'rw', 'rw'),
 (5, '32041300202', '32041300202', 'rt'),
 (6, '32041300201', '32041300201', 'rt'),
-(7, '220413', '220413', 'rw');
+(7, '220413', '220413', 'rw'),
+(10, '32041300001', '32041300001', 'rt'),
+(11, '320413', '320413', 'rt'),
+(12, '', '', 'rt'),
+(13, '', '', 'rt'),
+(14, '', '', 'rt'),
+(15, '', '', 'rt'),
+(16, '', '', 'rt'),
+(17, '', '', 'rt'),
+(18, '', '', 'rt'),
+(19, '', '', 'rt'),
+(20, '', '', 'rt'),
+(21, '', '', 'rt'),
+(22, '', '', 'rt'),
+(23, '', '', 'rt'),
+(24, '', '', 'rt'),
+(25, '', '', 'rt'),
+(26, '', '', 'rt'),
+(27, '', '', 'rt'),
+(28, '', '', 'rt'),
+(29, '', '', 'rt'),
+(30, '', '', 'rt'),
+(31, '', '', 'rt'),
+(32, '', '', 'rt'),
+(33, '', '', 'rt'),
+(34, '', '', 'rt'),
+(35, '', '', 'rt'),
+(36, '', '', 'rt'),
+(37, '', '', 'rt'),
+(38, '', '', 'rt'),
+(39, '', '', 'rt'),
+(40, '', '', 'rt'),
+(41, '', '', 'rt'),
+(42, '', '', 'rt'),
+(43, '', '', 'rt'),
+(44, '', '', 'rt'),
+(45, '', '', 'rt'),
+(46, '', '', 'rt'),
+(47, '', '', 'rt'),
+(48, '', '', 'rt'),
+(49, '', '', 'rt'),
+(50, '', '', 'rt'),
+(51, '320413', '320413', 'rt'),
+(52, '220413', '220413', 'rt'),
+(53, '32041300201', '32041300201', 'rt'),
+(54, '320413', '320413', 'rt'),
+(55, '320413', '320413', 'rw');
 
 -- --------------------------------------------------------
 
@@ -340,7 +395,7 @@ ALTER TABLE `rt`
 -- AUTO_INCREMENT untuk tabel `rw`
 --
 ALTER TABLE `rw`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `surat`
@@ -358,7 +413,7 @@ ALTER TABLE `test1`
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT untuk tabel `warga`

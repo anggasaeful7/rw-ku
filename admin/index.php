@@ -90,6 +90,17 @@
               </a>
             </li>
           </ul>
+
+          <hr>
+
+          <ul class="menu">
+            <li class="sidebar-item">
+              <a href="../logout.php" class="sidebar-link">
+                <i class="bi bi-grid-fill"></i>
+                <span>Log Out</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

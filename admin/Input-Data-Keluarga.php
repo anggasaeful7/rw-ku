@@ -216,490 +216,491 @@
             </div>
           </div>
         </section>
-        <section id="section_div1">
-          <div class="card">
-            <div class="card-header">
-              <h4 class="card-title">
-                Masukkan Data Anggota Keluarga Pertama
-              </h4>
-            </div>
-
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="no-kk">NO KK</label>
-                    <input type="text" class="form-control" id="no-kk" placeholder="Masukkan Nomor Kartu Keluarga" />
-                  </div>
-                  <div class="form-group">
-                    <label for="nik-anggota1">NIK</label>
-                    <input type="text" class="form-control" id="nik-anggota1" placeholder="Masukkan NIK" />
-                  </div>
-                  <div class="form-group">
-                    <label for="no-kk">Nama Anggota Keluarga</label>
-                    <input type="text" class="form-control" id="nama-kk1" placeholder="Masukkan Anggota Keluarga" />
-                  </div>
-                  <div class="form-group">
-                    <label for="jk1">Jenis Kelamin</label>
-                    <select class="choices form-select">
-                      <option value="LK">Laki - Laki</option>
-                      <option value="PR">Perempuan</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="TTL1">Tempat Tanggal Lahir</label>
-                    <input type="text" class="form-control" id="TTL" placeholder="Masukkan Tempat Tanggal Lahir" />
-                  </div>
-                  <div class="form-group">
-                    <label for="kewarganegaraan">Kewarganegaraan</label>
-                    <select class="choices form-select">
-                      <option value="WNI">Warna Negara Indonesia</option>
-                      <option value="WNA">Warga Negara Asing</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="Status">Status</label>
-                    <select class="choices form-select">
-                      <option value="Menikah">Menikah</option>
-                      <option value="Belum Menikah">Belum Menikah</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="pendidikan">Pendidikan</label>
-                    <select class="choices form-select">
-                      <option value="SD/Sederajat">SD/Sederajat</option>
-                      <option value="SMP/Sederajat">SMP/Sederajat</option>
-                      <option value="SMA/Sederajat">SMA/Sederajat</option>
-                      <option value="D3">D3</option>
-                      <option value="S1/D4">S1/D4</option>
-                      <option value="S2">S2</option>
-                      <option value="S3">S3</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="pendidikan">Agama</label>
-                    <select class="choices form-select">
-                      <option value="Islam">Islam</option>
-                      <option value="Kristen">Kristen</option>
-                      <option value="Katholik">Katholik</option>
-                      <option value="Buddha">Buddha</option>
-                      <option value="Hindu">Hindu</option>
-                      <option value="Lain-lain">Lain-Lain</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="Alamat">Alamat</label>
-                    <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat" />
-                  </div>
-                  <div class="form-group">
-                    <label for="formFileSm" class="form-label">Gambar Scan Kartu Keluarga</label>
-                    <input class="form-control form-control-sm" id="formFileSm" type="file" />
-                  </div>
-                  <div class="form-group">
-                    <label for="RT">RT</label>
-                    <input type="text" class="form-control" id="RT" placeholder="Kartu Keluarga Masuk ke RT berapa" />
-                  </div>
-                  <div class="form-group">
-                    <label for="RW">RW</label>
-                    <input type="text" class="form-control" id="RW" placeholder="Kartu Keluarga Masuk ke RW berapa" />
-                  </div>
-                  <div class="form-group">
-                    <button id="btn1" type="button" class="btn btn-primary mt-5">Tambahkan Data Keluarga</button>
-                  </div>
-                </div>
+        <form action="tambah.php" method="post">
+          <section id="section_div1">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">
+                  Masukkan Data Anggota Keluarga Pertama
+                </h4>
               </div>
-            </div>
-          </div>
-        </section>
-        <section id="section_div2">
-          <div class="card">
-            <div class="card-header">
-              <h4 class="card-title">Masukkan Data Anggota Keluarga Kedua</h4>
-            </div>
 
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="no-kk">NO KK</label>
-                    <input type="text" class="form-control" id="no-kk" placeholder="Masukkan Nomor Kartu Keluarga" />
-                  </div>
-                  <div class="form-group">
-                    <label for="nik-anggota1">NIK</label>
-                    <input type="text" class="form-control" id="nik-anggota1" placeholder="Masukkan NIK" />
-                  </div>
-                  <div class="form-group">
-                    <label for="no-kk">Nama Anggota Keluarga</label>
-                    <input type="text" class="form-control" id="nama-kk1" placeholder="Masukkan Anggota Keluarga" />
-                  </div>
-                  <div class="form-group">
-                    <label for="jk1">Jenis Kelamin</label>
-                    <select class="choices form-select">
-                      <option value="LK">Laki - Laki</option>
-                      <option value="PR">Perempuan</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="TTL1">Tempat Tanggal Lahir</label>
-                    <input type="text" class="form-control" id="TTL" placeholder="Masukkan Tempat Tanggal Lahir" />
-                  </div>
-                  <div class="form-group">
-                    <label for="kewarganegaraan">Kewarganegaraan</label>
-                    <select class="choices form-select">
-                      <option value="WNI">Warna Negara Indonesia</option>
-                      <option value="WNA">Warga Negara Asing</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="Status">Status</label>
-                    <select class="choices form-select">
-                      <option value="Menikah">Menikah</option>
-                      <option value="Belum Menikah">Belum Menikah</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-
-                  <div class="form-group">
-                    <label for="pendidikan">Pendidikan</label>
-                    <select class="choices form-select">
-                      <option value="SD/Sederajat">SD/Sederajat</option>
-                      <option value="SMP/Sederajat">SMP/Sederajat</option>
-                      <option value="SMA/Sederajat">SMA/Sederajat</option>
-                      <option value="D3">D3</option>
-                      <option value="S1/D4">S1/D4</option>
-                      <option value="S2">S2</option>
-                      <option value="S3">S3</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="pendidikan">Agama</label>
-                    <select class="choices form-select">
-                      <option value="Islam">Islam</option>
-                      <option value="Kristen">Kristen</option>
-                      <option value="Katholik">Katholik</option>
-                      <option value="Buddha">Buddha</option>
-                      <option value="Hindu">Hindu</option>
-                      <option value="Lain-lain">Lain-Lain</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="Alamat">Alamat</label>
-                    <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat" />
-                  </div>
-                  <div class="form-group">
-                    <label for="formFileSm" class="form-label">Gambar Scan Kartu Keluarga</label>
-                    <input class="form-control form-control-sm" id="formFileSm" type="file" />
-                  </div>
-                  <div class="form-group">
-                    <label for="RT">RT</label>
-                    <input type="text" class="form-control" id="RT" placeholder="Kartu Keluarga Masuk ke RT berapa" />
-                  </div>
-                  <div class="form-group">
-                    <label for="RW">RW</label>
-                    <input type="text" class="form-control" id="RW" placeholder="Kartu Keluarga Masuk ke RW berapa" />
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
                     <div class="form-group">
-                      <button id="btn2" type="button" class="btn btn-primary mt-5">Tambahkan Data Keluarga</button>
+                      <label for="no-kk">NO KK</label>
+                      <input type="text" class="form-control" id="no-kk" placeholder="Masukkan Nomor Kartu Keluarga" />
+                    </div>
+                    <div class="form-group">
+                      <label for="nik-anggota1">NIK</label>
+                      <input type="text" class="form-control" id="nik-anggota1" placeholder="Masukkan NIK" />
+                    </div>
+                    <div class="form-group">
+                      <label for="no-kk">Nama Anggota Keluarga</label>
+                      <input type="text" class="form-control" id="nama-kk1" placeholder="Masukkan Anggota Keluarga" />
+                    </div>
+                    <div class="form-group">
+                      <label for="jk1">Jenis Kelamin</label>
+                      <select class="choices form-select">
+                        <option value="LK">Laki - Laki</option>
+                        <option value="PR">Perempuan</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="TTL1">Tempat Tanggal Lahir</label>
+                      <input type="text" class="form-control" id="TTL" placeholder="Masukkan Tempat Tanggal Lahir" />
+                    </div>
+                    <div class="form-group">
+                      <label for="kewarganegaraan">Kewarganegaraan</label>
+                      <select class="choices form-select">
+                        <option value="WNI">Warna Negara Indonesia</option>
+                        <option value="WNA">Warga Negara Asing</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="Status">Status</label>
+                      <select class="choices form-select">
+                        <option value="Menikah">Menikah</option>
+                        <option value="Belum Menikah">Belum Menikah</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="pendidikan">Pendidikan</label>
+                      <select class="choices form-select">
+                        <option value="SD/Sederajat">SD/Sederajat</option>
+                        <option value="SMP/Sederajat">SMP/Sederajat</option>
+                        <option value="SMA/Sederajat">SMA/Sederajat</option>
+                        <option value="D3">D3</option>
+                        <option value="S1/D4">S1/D4</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="pendidikan">Agama</label>
+                      <select class="choices form-select">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katholik">Katholik</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Lain-lain">Lain-Lain</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="Alamat">Alamat</label>
+                      <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="formFileSm" class="form-label">Gambar Scan Kartu Keluarga</label>
+                      <input class="form-control form-control-sm" id="formFileSm" type="file" />
+                    </div>
+                    <div class="form-group">
+                      <label for="RT">RT</label>
+                      <input type="text" class="form-control" id="RT" placeholder="Kartu Keluarga Masuk ke RT berapa" />
+                    </div>
+                    <div class="form-group">
+                      <label for="RW">RW</label>
+                      <input type="text" class="form-control" id="RW" placeholder="Kartu Keluarga Masuk ke RW berapa" />
+                    </div>
+                    <div class="form-group">
+                      <button id="btn1" type="button" class="btn btn-primary mt-5">Tambahkan Data Keluarga</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section id="section_div3">
-          <div class="card">
-            <div class="card-header">
-              <h4 class="card-title">
-                Masukkan Data Anggota Keluarga Ketiga
-              </h4>
-            </div>
+          </section>
+          <section id="section_div2">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">Masukkan Data Anggota Keluarga Kedua</h4>
+              </div>
 
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="no-kk">NO KK</label>
-                    <input type="text" class="form-control" id="no-kk" placeholder="Masukkan Nomor Kartu Keluarga" />
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="no-kk">NO KK</label>
+                      <input type="text" class="form-control" id="no-kk" placeholder="Masukkan Nomor Kartu Keluarga" />
+                    </div>
+                    <div class="form-group">
+                      <label for="nik-anggota1">NIK</label>
+                      <input type="text" class="form-control" id="nik-anggota1" placeholder="Masukkan NIK" />
+                    </div>
+                    <div class="form-group">
+                      <label for="no-kk">Nama Anggota Keluarga</label>
+                      <input type="text" class="form-control" id="nama-kk1" placeholder="Masukkan Anggota Keluarga" />
+                    </div>
+                    <div class="form-group">
+                      <label for="jk1">Jenis Kelamin</label>
+                      <select class="choices form-select">
+                        <option value="LK">Laki - Laki</option>
+                        <option value="PR">Perempuan</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="TTL1">Tempat Tanggal Lahir</label>
+                      <input type="text" class="form-control" id="TTL" placeholder="Masukkan Tempat Tanggal Lahir" />
+                    </div>
+                    <div class="form-group">
+                      <label for="kewarganegaraan">Kewarganegaraan</label>
+                      <select class="choices form-select">
+                        <option value="WNI">Warna Negara Indonesia</option>
+                        <option value="WNA">Warga Negara Asing</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="Status">Status</label>
+                      <select class="choices form-select">
+                        <option value="Menikah">Menikah</option>
+                        <option value="Belum Menikah">Belum Menikah</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="nik-anggota1">NIK</label>
-                    <input type="text" class="form-control" id="nik-anggota1" placeholder="Masukkan NIK" />
-                  </div>
-                  <div class="form-group">
-                    <label for="no-kk">Nama Anggota Keluarga</label>
-                    <input type="text" class="form-control" id="nama-kk1" placeholder="Masukkan Anggota Keluarga" />
-                  </div>
-                  <div class="form-group">
-                    <label for="jk1">Jenis Kelamin</label>
-                    <select class="choices form-select">
-                      <option value="LK">Laki - Laki</option>
-                      <option value="PR">Perempuan</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="TTL1">Tempat Tanggal Lahir</label>
-                    <input type="text" class="form-control" id="TTL" placeholder="Masukkan Tempat Tanggal Lahir" />
-                  </div>
-                  <div class="form-group">
-                    <label for="kewarganegaraan">Kewarganegaraan</label>
-                    <select class="choices form-select">
-                      <option value="WNI">Warna Negara Indonesia</option>
-                      <option value="WNA">Warga Negara Asing</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="Status">Status</label>
-                    <select class="choices form-select">
-                      <option value="Menikah">Menikah</option>
-                      <option value="Belum Menikah">Belum Menikah</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="pendidikan">Pendidikan</label>
-                    <select class="choices form-select">
-                      <option value="SD/Sederajat">SD/Sederajat</option>
-                      <option value="SMP/Sederajat">SMP/Sederajat</option>
-                      <option value="SMA/Sederajat">SMA/Sederajat</option>
-                      <option value="D3">D3</option>
-                      <option value="S1/D4">S1/D4</option>
-                      <option value="S2">S2</option>
-                      <option value="S3">S3</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="pendidikan">Agama</label>
-                    <select class="choices form-select">
-                      <option value="Islam">Islam</option>
-                      <option value="Kristen">Kristen</option>
-                      <option value="Katholik">Katholik</option>
-                      <option value="Buddha">Buddha</option>
-                      <option value="Hindu">Hindu</option>
-                      <option value="Lain-lain">Lain-Lain</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="Alamat">Alamat</label>
-                    <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat" />
-                  </div>
-                  <div class="form-group">
-                    <label for="formFileSm" class="form-label">Gambar Scan Kartu Keluarga</label>
-                    <input class="form-control form-control-sm" id="formFileSm" type="file" />
-                  </div>
-                  <div class="form-group">
-                    <label for="RT">RT</label>
-                    <input type="text" class="form-control" id="RT" placeholder="Kartu Keluarga Masuk ke RT berapa" />
-                  </div>
-                  <div class="form-group">
-                    <label for="RW">RW</label>
-                    <input type="text" class="form-control" id="RW" placeholder="Kartu Keluarga Masuk ke RW berapa" />
-                  </div>
-                  <div class="form-group">
-                    <button id="btn3" type="button" class="btn btn-primary mt-5">Tambahkan Data Keluarga</button>
+                  <div class="col-md-6">
+
+                    <div class="form-group">
+                      <label for="pendidikan">Pendidikan</label>
+                      <select class="choices form-select">
+                        <option value="SD/Sederajat">SD/Sederajat</option>
+                        <option value="SMP/Sederajat">SMP/Sederajat</option>
+                        <option value="SMA/Sederajat">SMA/Sederajat</option>
+                        <option value="D3">D3</option>
+                        <option value="S1/D4">S1/D4</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="pendidikan">Agama</label>
+                      <select class="choices form-select">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katholik">Katholik</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Lain-lain">Lain-Lain</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="Alamat">Alamat</label>
+                      <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="formFileSm" class="form-label">Gambar Scan Kartu Keluarga</label>
+                      <input class="form-control form-control-sm" id="formFileSm" type="file" />
+                    </div>
+                    <div class="form-group">
+                      <label for="RT">RT</label>
+                      <input type="text" class="form-control" id="RT" placeholder="Kartu Keluarga Masuk ke RT berapa" />
+                    </div>
+                    <div class="form-group">
+                      <label for="RW">RW</label>
+                      <input type="text" class="form-control" id="RW" placeholder="Kartu Keluarga Masuk ke RW berapa" />
+                      <div class="form-group">
+                        <button id="btn2" type="button" class="btn btn-primary mt-5">Tambahkan Data Keluarga</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section id="section_div4">
-          <div class="card">
-            <div class="card-header">
-              <h4 class="card-title">
-                Masukkan Data Anggota Keluarga Keempat
-              </h4>
-            </div>
+          </section>
+          <section id="section_div3">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">
+                  Masukkan Data Anggota Keluarga Ketiga
+                </h4>
+              </div>
 
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="no-kk">NO KK</label>
-                    <input type="text" class="form-control" id="no-kk" placeholder="Masukkan Nomor Kartu Keluarga" />
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="no-kk">NO KK</label>
+                      <input type="text" class="form-control" id="no-kk" placeholder="Masukkan Nomor Kartu Keluarga" />
+                    </div>
+                    <div class="form-group">
+                      <label for="nik-anggota1">NIK</label>
+                      <input type="text" class="form-control" id="nik-anggota1" placeholder="Masukkan NIK" />
+                    </div>
+                    <div class="form-group">
+                      <label for="no-kk">Nama Anggota Keluarga</label>
+                      <input type="text" class="form-control" id="nama-kk1" placeholder="Masukkan Anggota Keluarga" />
+                    </div>
+                    <div class="form-group">
+                      <label for="jk1">Jenis Kelamin</label>
+                      <select class="choices form-select">
+                        <option value="LK">Laki - Laki</option>
+                        <option value="PR">Perempuan</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="TTL1">Tempat Tanggal Lahir</label>
+                      <input type="text" class="form-control" id="TTL" placeholder="Masukkan Tempat Tanggal Lahir" />
+                    </div>
+                    <div class="form-group">
+                      <label for="kewarganegaraan">Kewarganegaraan</label>
+                      <select class="choices form-select">
+                        <option value="WNI">Warna Negara Indonesia</option>
+                        <option value="WNA">Warga Negara Asing</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="Status">Status</label>
+                      <select class="choices form-select">
+                        <option value="Menikah">Menikah</option>
+                        <option value="Belum Menikah">Belum Menikah</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="nik-anggota1">NIK</label>
-                    <input type="text" class="form-control" id="nik-anggota1" placeholder="Masukkan NIK" />
-                  </div>
-                  <div class="form-group">
-                    <label for="no-kk">Nama Anggota Keluarga</label>
-                    <input type="text" class="form-control" id="nama-kk1" placeholder="Masukkan Anggota Keluarga" />
-                  </div>
-                  <div class="form-group">
-                    <label for="jk1">Jenis Kelamin</label>
-                    <select class="choices form-select">
-                      <option value="LK">Laki - Laki</option>
-                      <option value="PR">Perempuan</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="TTL1">Tempat Tanggal Lahir</label>
-                    <input type="text" class="form-control" id="TTL" placeholder="Masukkan Tempat Tanggal Lahir" />
-                  </div>
-                  <div class="form-group">
-                    <label for="kewarganegaraan">Kewarganegaraan</label>
-                    <select class="choices form-select">
-                      <option value="WNI">Warna Negara Indonesia</option>
-                      <option value="WNA">Warga Negara Asing</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="Status">Status</label>
-                    <select class="choices form-select">
-                      <option value="Menikah">Menikah</option>
-                      <option value="Belum Menikah">Belum Menikah</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="pendidikan">Pendidikan</label>
-                    <select class="choices form-select">
-                      <option value="SD/Sederajat">SD/Sederajat</option>
-                      <option value="SMP/Sederajat">SMP/Sederajat</option>
-                      <option value="SMA/Sederajat">SMA/Sederajat</option>
-                      <option value="D3">D3</option>
-                      <option value="S1/D4">S1/D4</option>
-                      <option value="S2">S2</option>
-                      <option value="S3">S3</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="pendidikan">Agama</label>
-                    <select class="choices form-select">
-                      <option value="Islam">Islam</option>
-                      <option value="Kristen">Kristen</option>
-                      <option value="Katholik">Katholik</option>
-                      <option value="Buddha">Buddha</option>
-                      <option value="Hindu">Hindu</option>
-                      <option value="Lain-lain">Lain-Lain</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="Alamat">Alamat</label>
-                    <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat" />
-                  </div>
-                  <div class="form-group">
-                    <label for="formFileSm" class="form-label">Gambar Scan Kartu Keluarga</label>
-                    <input class="form-control form-control-sm" id="formFileSm" type="file" />
-                  </div>
-                  <div class="form-group">
-                    <label for="RT">RT</label>
-                    <input type="text" class="form-control" id="RT" placeholder="Kartu Keluarga Masuk ke RT berapa" />
-                  </div>
-                  <div class="form-group">
-                    <label for="RW">RW</label>
-                    <input type="text" class="form-control" id="RW" placeholder="Kartu Keluarga Masuk ke RW berapa" />
-                  </div>
-                  <div class="form-group">
-                    <button id="btn4" type="button" class="btn btn-primary mt-5">Tambahkan Data Keluarga</button>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="pendidikan">Pendidikan</label>
+                      <select class="choices form-select">
+                        <option value="SD/Sederajat">SD/Sederajat</option>
+                        <option value="SMP/Sederajat">SMP/Sederajat</option>
+                        <option value="SMA/Sederajat">SMA/Sederajat</option>
+                        <option value="D3">D3</option>
+                        <option value="S1/D4">S1/D4</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="pendidikan">Agama</label>
+                      <select class="choices form-select">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katholik">Katholik</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Lain-lain">Lain-Lain</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="Alamat">Alamat</label>
+                      <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="formFileSm" class="form-label">Gambar Scan Kartu Keluarga</label>
+                      <input class="form-control form-control-sm" id="formFileSm" type="file" />
+                    </div>
+                    <div class="form-group">
+                      <label for="RT">RT</label>
+                      <input type="text" class="form-control" id="RT" placeholder="Kartu Keluarga Masuk ke RT berapa" />
+                    </div>
+                    <div class="form-group">
+                      <label for="RW">RW</label>
+                      <input type="text" class="form-control" id="RW" placeholder="Kartu Keluarga Masuk ke RW berapa" />
+                    </div>
+                    <div class="form-group">
+                      <button id="btn3" type="button" class="btn btn-primary mt-5">Tambahkan Data Keluarga</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section id="section_div5">
-          <div class="card">
-            <div class="card-header">
-              <h4 class="card-title">
-                Masukkan Data Anggota Keluarga Kelima
-              </h4>
-            </div>
-
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="no-kk">NO KK</label>
-                    <input type="text" class="form-control" id="no-kk" placeholder="Masukkan Nomor Kartu Keluarga" />
+          </section>
+          <section id="section_div4">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">
+                  Masukkan Data Anggota Keluarga Keempat
+                </h4>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="no-kk">NO KK</label>
+                      <input type="text" class="form-control" id="no-kk" placeholder="Masukkan Nomor Kartu Keluarga" />
+                    </div>
+                    <div class="form-group">
+                      <label for="nik-anggota1">NIK</label>
+                      <input type="text" class="form-control" id="nik-anggota1" placeholder="Masukkan NIK" />
+                    </div>
+                    <div class="form-group">
+                      <label for="no-kk">Nama Anggota Keluarga</label>
+                      <input type="text" class="form-control" id="nama-kk1" placeholder="Masukkan Anggota Keluarga" />
+                    </div>
+                    <div class="form-group">
+                      <label for="jk1">Jenis Kelamin</label>
+                      <select class="choices form-select">
+                        <option value="LK">Laki - Laki</option>
+                        <option value="PR">Perempuan</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="TTL1">Tempat Tanggal Lahir</label>
+                      <input type="text" class="form-control" id="TTL" placeholder="Masukkan Tempat Tanggal Lahir" />
+                    </div>
+                    <div class="form-group">
+                      <label for="kewarganegaraan">Kewarganegaraan</label>
+                      <select class="choices form-select">
+                        <option value="WNI">Warna Negara Indonesia</option>
+                        <option value="WNA">Warga Negara Asing</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="Status">Status</label>
+                      <select class="choices form-select">
+                        <option value="Menikah">Menikah</option>
+                        <option value="Belum Menikah">Belum Menikah</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="nik-anggota1">NIK</label>
-                    <input type="text" class="form-control" id="nik-anggota1" placeholder="Masukkan NIK" />
-                  </div>
-                  <div class="form-group">
-                    <label for="no-kk">Nama Anggota Keluarga</label>
-                    <input type="text" class="form-control" id="nama-kk1" placeholder="Masukkan Anggota Keluarga" />
-                  </div>
-                  <div class="form-group">
-                    <label for="jk1">Jenis Kelamin</label>
-                    <select class="choices form-select">
-                      <option value="LK">Laki - Laki</option>
-                      <option value="PR">Perempuan</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="TTL1">Tempat Tanggal Lahir</label>
-                    <input type="text" class="form-control" id="TTL" placeholder="Masukkan Tempat Tanggal Lahir" />
-                  </div>
-                  <div class="form-group">
-                    <label for="kewarganegaraan">Kewarganegaraan</label>
-                    <select class="choices form-select">
-                      <option value="WNI">Warna Negara Indonesia</option>
-                      <option value="WNA">Warga Negara Asing</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="Status">Status</label>
-                    <select class="choices form-select">
-                      <option value="Menikah">Menikah</option>
-                      <option value="Belum Menikah">Belum Menikah</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="pendidikan">Pendidikan</label>
-                    <select class="choices form-select">
-                      <option value="SD/Sederajat">SD/Sederajat</option>
-                      <option value="SMP/Sederajat">SMP/Sederajat</option>
-                      <option value="SMA/Sederajat">SMA/Sederajat</option>
-                      <option value="D3">D3</option>
-                      <option value="S1/D4">S1/D4</option>
-                      <option value="S2">S2</option>
-                      <option value="S3">S3</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="pendidikan">Agama</label>
-                    <select class="choices form-select">
-                      <option value="Islam">Islam</option>
-                      <option value="Kristen">Kristen</option>
-                      <option value="Katholik">Katholik</option>
-                      <option value="Buddha">Buddha</option>
-                      <option value="Hindu">Hindu</option>
-                      <option value="Lain-lain">Lain-Lain</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="Alamat">Alamat</label>
-                    <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat" />
-                  </div>
-                  <div class="form-group">
-                    <label for="formFileSm" class="form-label">Gambar Scan Kartu Keluarga</label>
-                    <input class="form-control form-control-sm" id="formFileSm" type="file" />
-                  </div>
-                  <div class="form-group">
-                    <label for="RT">RT</label>
-                    <input type="text" class="form-control" id="RT" placeholder="Kartu Keluarga Masuk ke RT berapa" />
-                  </div>
-                  <div class="form-group">
-                    <label for="RW">RW</label>
-                    <input type="text" class="form-control" id="RW" placeholder="Kartu Keluarga Masuk ke RW berapa" />
-                  </div>
-                  <div class="form-group">
-                    <button id="btn5" type="button" class="btn btn-primary mt-5">Tambahkan Data Keluarga</button>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="pendidikan">Pendidikan</label>
+                      <select class="choices form-select">
+                        <option value="SD/Sederajat">SD/Sederajat</option>
+                        <option value="SMP/Sederajat">SMP/Sederajat</option>
+                        <option value="SMA/Sederajat">SMA/Sederajat</option>
+                        <option value="D3">D3</option>
+                        <option value="S1/D4">S1/D4</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="pendidikan">Agama</label>
+                      <select class="choices form-select">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katholik">Katholik</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Lain-lain">Lain-Lain</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="Alamat">Alamat</label>
+                      <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="formFileSm" class="form-label">Gambar Scan Kartu Keluarga</label>
+                      <input class="form-control form-control-sm" id="formFileSm" type="file" />
+                    </div>
+                    <div class="form-group">
+                      <label for="RT">RT</label>
+                      <input type="text" class="form-control" id="RT" placeholder="Kartu Keluarga Masuk ke RT berapa" />
+                    </div>
+                    <div class="form-group">
+                      <label for="RW">RW</label>
+                      <input type="text" class="form-control" id="RW" placeholder="Kartu Keluarga Masuk ke RW berapa" />
+                    </div>
+                    <div class="form-group">
+                      <button id="btn4" type="button" class="btn btn-primary mt-5">Tambahkan Data Keluarga</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+          <section id="section_div5">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">
+                  Masukkan Data Anggota Keluarga Kelima
+                </h4>
+              </div>
+
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="no-kk">NO KK</label>
+                      <input type="text" class="form-control" id="no-kk" placeholder="Masukkan Nomor Kartu Keluarga" />
+                    </div>
+                    <div class="form-group">
+                      <label for="nik-anggota1">NIK</label>
+                      <input type="text" class="form-control" id="nik-anggota1" placeholder="Masukkan NIK" />
+                    </div>
+                    <div class="form-group">
+                      <label for="no-kk">Nama Anggota Keluarga</label>
+                      <input type="text" class="form-control" id="nama-kk1" placeholder="Masukkan Anggota Keluarga" />
+                    </div>
+                    <div class="form-group">
+                      <label for="jk1">Jenis Kelamin</label>
+                      <select class="choices form-select">
+                        <option value="LK">Laki - Laki</option>
+                        <option value="PR">Perempuan</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="TTL1">Tempat Tanggal Lahir</label>
+                      <input type="text" class="form-control" id="TTL" placeholder="Masukkan Tempat Tanggal Lahir" />
+                    </div>
+                    <div class="form-group">
+                      <label for="kewarganegaraan">Kewarganegaraan</label>
+                      <select class="choices form-select">
+                        <option value="WNI">Warna Negara Indonesia</option>
+                        <option value="WNA">Warga Negara Asing</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="Status">Status</label>
+                      <select class="choices form-select">
+                        <option value="Menikah">Menikah</option>
+                        <option value="Belum Menikah">Belum Menikah</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="pendidikan">Pendidikan</label>
+                      <select class="choices form-select">
+                        <option value="SD/Sederajat">SD/Sederajat</option>
+                        <option value="SMP/Sederajat">SMP/Sederajat</option>
+                        <option value="SMA/Sederajat">SMA/Sederajat</option>
+                        <option value="D3">D3</option>
+                        <option value="S1/D4">S1/D4</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="pendidikan">Agama</label>
+                      <select class="choices form-select">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katholik">Katholik</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Lain-lain">Lain-Lain</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="Alamat">Alamat</label>
+                      <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat" />
+                    </div>
+                    <div class="form-group">
+                      <label for="formFileSm" class="form-label">Gambar Scan Kartu Keluarga</label>
+                      <input class="form-control form-control-sm" id="formFileSm" type="file" />
+                    </div>
+                    <div class="form-group">
+                      <label for="RT">RT</label>
+                      <input type="text" class="form-control" id="RT" placeholder="Kartu Keluarga Masuk ke RT berapa" />
+                    </div>
+                    <div class="form-group">
+                      <label for="RW">RW</label>
+                      <input type="text" class="form-control" id="RW" placeholder="Kartu Keluarga Masuk ke RW berapa" />
+                    </div>
+                    <div class="form-group">
+                      <button id="btn5" type="button" class="btn btn-primary mt-5">Tambahkan Data Keluarga</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </form>
       </div>
       <footer>
         <div class="footer clearfix mb-0 text-muted">

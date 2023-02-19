@@ -120,66 +120,69 @@
             </div>
 
             <div class="card-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="no-kk">RT KE-</label>
-                    <input type="number" class="form-control" id="RT" placeholder="Masukkan Data RT Keberapa" />
-                  </div>
-                  <div class="form-group">
-                    <label for="nik">Nama Ketua RT</label>
-                    <input type="text" class="form-control" id="nik" placeholder="Masukkan Nama Ketua RT
+              <form action="tambahrt.php" method="post">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="no-kk">RT KE-</label>
+                      <input type="number" class="form-control" id="RT" name="rt" placeholder="Masukkan Data RT Keberapa" />
+                    </div>
+                    <div class="form-group">
+                      <label for="nik">Nama Ketua RT</label>
+                      <input type="text" class="form-control" id="nik" name="nama" placeholder="Masukkan Nama Ketua RT
                       " />
+                    </div>
+                    <div class="form-group">
+                      <label for="alamat-rt">Alamat Ketua RT</label>
+                      <input type="text" class="form-control" id="nama-kk" name="alamat" placeholder="Alamat Ketua RT" />
+                    </div>
+                    <div class="form-group">
+                      <label for="TTL">NIK RT</label>
+                      <input type="text" class="form-control" id="TTL" name="nik" placeholder="Masukkan NIK RT" />
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="alamat-rt">Alamat Ketua RT</label>
-                    <input type="text" class="form-control" id="nama-kk" placeholder="Alamat Ketua RT" />
-                  </div>
-                  <div class="form-group">
-                    <label for="TTL">Tempat Tanggal Lahir Ketua RT</label>
-                    <input type="text" class="form-control" id="TTL" placeholder="Contoh : 22-08-2003" />
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="Status">Status</label>
+                      <select class="choices form-select" name="status">
+                        <option value="Menikah">Menikah</option>
+                        <option value="Belum Menikah">Belum Menikah</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="pendidikan">Pendidikan</label>
+                      <select class="choices form-select" name="pendidikan">
+                        <option value="SD/Sederajat">SD/Sederajat</option>
+                        <option value="SMP/Sederajat">SMP/Sederajat</option>
+                        <option value="SMA/Sederajat">SMA/Sederajat</option>
+                        <option value="D3">D3</option>
+                        <option value="S1/D4">S1/D4</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="pendidikan">Agama</label>
+                      <select class="choices form-select" name="agama">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katholik">Katholik</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Lain-lain">Lain-Lain</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="RW">RW</label>
+                      <input type="text" class="form-control" id="RW" name="rw" placeholder="RT Masuk KE RW Berapa" />
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary">Tambahkan data </button>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="Status">Status</label>
-                    <select class="choices form-select">
-                      <option value="Menikah">Menikah</option>
-                      <option value="Belum Menikah">Belum Menikah</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="pendidikan">Pendidikan</label>
-                    <select class="choices form-select">
-                      <option value="SD/Sederajat">SD/Sederajat</option>
-                      <option value="SMP/Sederajat">SMP/Sederajat</option>
-                      <option value="SMA/Sederajat">SMA/Sederajat</option>
-                      <option value="D3">D3</option>
-                      <option value="S1/D4">S1/D4</option>
-                      <option value="S2">S2</option>
-                      <option value="S3">S3</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="pendidikan">Agama</label>
-                    <select class="choices form-select">
-                      <option value="Islam">Islam</option>
-                      <option value="Kristen">Kristen</option>
-                      <option value="Katholik">Katholik</option>
-                      <option value="Buddha">Buddha</option>
-                      <option value="Hindu">Hindu</option>
-                      <option value="Lain-lain">Lain-Lain</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="RW">RW</label>
-                    <input type="text" class="form-control" id="RW" placeholder="RT Masuk KE RW Berapa" />
-                  </div>
-                  <div class="form-group">
-                    <button type="button" class="btn btn-primary">Tambahkan data </button>
-                  </div>
-                </div>
-              </div>
+              </form>
+
             </div>
           </div>
         </section>

@@ -120,62 +120,65 @@
             </div>
 
             <div class="card-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="no-rw">Rw KE-</label>
-                    <input type="number" class="form-control" id="no-rw" placeholder="Masukkan Data RT Keberapa" />
-                  </div>
-                  <div class="form-group">
-                    <label for="nama-rw">Nama Ketua RW</label>
-                    <input type="text" class="form-control" id="nama-rw" placeholder="Masukkan Nama Ketua RT
+              <form action="tambahrw.php" method="post">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="no-rw">Rw KE-</label>
+                      <input type="number" class="form-control" id="no-rw" name="rw" placeholder="Masukkan Data RW Keberapa" />
+                    </div>
+                    <div class="form-group">
+                      <label for="nama-rw">Nama Ketua RW</label>
+                      <input type="text" class="form-control" id="nama-rw" name="nama" placeholder="Masukkan Nama Ketua RW
                       " />
+                    </div>
+                    <div class="form-group">
+                      <label for="alamat-rw">Alamat Ketua RW</label>
+                      <input type="text" class="form-control" id="alamat-rw" name="alamat" placeholder="Alamat Ketua RW" />
+                    </div>
+                    <div class="form-group">
+                      <label for="TTL-RW">NIK RW</label>
+                      <input type="text" class="form-control" name="nik" id="TTL-RW" placeholder="Masukkan NIK RW" />
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="alamat-rw">Alamat Ketua RW</label>
-                    <input type="text" class="form-control" id="alamat-rw" placeholder="Alamat Ketua RT" />
-                  </div>
-                  <div class="form-group">
-                    <label for="TTL-RW">Tempat Tanggal Lahir Ketua RW</label>
-                    <input type="text" class="form-control" id="TTL-RW" placeholder="Contoh : 22-08-2003" />
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="Status">Status</label>
+                      <select class="choices form-select" name="status">
+                        <option value="Menikah">Menikah</option>
+                        <option value="Belum Menikah">Belum Menikah</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="pendidikan">Pendidikan</label>
+                      <select class="choices form-select" name="pendidikan">
+                        <option value="SD/Sederajat">SD/Sederajat</option>
+                        <option value="SMP/Sederajat">SMP/Sederajat</option>
+                        <option value="SMA/Sederajat">SMA/Sederajat</option>
+                        <option value="D3">D3</option>
+                        <option value="S1/D4">S1/D4</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="pendidikan">Agama</label>
+                      <select class="choices form-select" name="agama">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katholik">Katholik</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Lain-lain">Lain-Lain</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary mt-4">Tambahkan data </button>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="Status">Status</label>
-                    <select class="choices form-select">
-                      <option value="Menikah">Menikah</option>
-                      <option value="Belum Menikah">Belum Menikah</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="pendidikan">Pendidikan</label>
-                    <select class="choices form-select">
-                      <option value="SD/Sederajat">SD/Sederajat</option>
-                      <option value="SMP/Sederajat">SMP/Sederajat</option>
-                      <option value="SMA/Sederajat">SMA/Sederajat</option>
-                      <option value="D3">D3</option>
-                      <option value="S1/D4">S1/D4</option>
-                      <option value="S2">S2</option>
-                      <option value="S3">S3</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="pendidikan">Agama</label>
-                    <select class="choices form-select">
-                      <option value="Islam">Islam</option>
-                      <option value="Kristen">Kristen</option>
-                      <option value="Katholik">Katholik</option>
-                      <option value="Buddha">Buddha</option>
-                      <option value="Hindu">Hindu</option>
-                      <option value="Lain-lain">Lain-Lain</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <button type="button" class="btn btn-primary mt-4">Tambahkan data </button>
-                  </div>
-                </div>
-              </div>
+              </form>
+
             </div>
           </div>
         </section>
