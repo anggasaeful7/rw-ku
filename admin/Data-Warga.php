@@ -119,50 +119,45 @@
                     <table class="table table-bordered mb-0">
                       <thead>
                         <tr>
-                          <th>No KK</th>
-                          <th>NIK </th>
-                          <th>Nama</th>
-                          <th>Jenis Kelamin</th>
-                          <th>TTL</th>
-                          <th>Kewarganegaraan</th>
-                          <th>Status</th>
-                          <th>Pendidikan</th>
-                          <th>Agama</th>
-                          <th>Alamat</th>
-                          <th>RT</th>
-                          <th>RW</th>
+                                            <th>KK</th>
+                                            <th>NIK</th>
+                                            <th>Nama</th>
+                                            <th>Alamat</th>
+                                            <th>Agama</th>
+                                            <th>Kewarganegaraan</th>
+                                            <th>Status</th>
+                                            <th>Pendidikan</th>
+                                            <th>Pekerjaan</th>
+                                            <th>TTL</th>
+                                            <th>Aksi</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                          <td class="text-bold-500">321792024568</td>
-                          <td>321782146524</td>
-                          <td class="text-bold-500">Abdul Rohimin</td>
-                          <td>Laki - Laki</td>
-                          <td>Bandung,23-77-1998</td>
-                          <td>WNI</td>
-                          <td>Menikah</td>
-                          <td>S1/Sederajat</td>
-                          <td>Islam</td>
-                          <td>Sumedang kulon</td>
-                          <td>1</td>
-                          <td>2</td>
-
-                        </tr>
-                        <tr>
-                          <td class="text-bold-500">31122276</td>
-                          <td>3121316333</td>
-                          <td class="text-bold-500">Angga Saeful Umam</td>
-                          <td>Laki - Laki</td>
-                          <td>Bandung,23-77-1945</td>
-                          <td>WNI</td>
-                          <td>Jomblo</td>
-                          <td>S1/Sederajat</td>
-                          <td>Islam</td>
-                          <td>Banjaran Legok</td>
-                          <td>3</td>
-                          <td>1</td>
-                        </tr>
+                      <?php
+                                        include '../koneksi.php';
+                                        $no = 1;
+                                        $data = mysqli_query($koneksi, "select * from warga");
+                                        while ($d = mysqli_fetch_array($data)) {
+                                        ?>
+                                            <tr>
+                                                <td><?php echo $d['nokk']; ?></td>
+                                                <td><?php echo $d['nik']; ?></td>
+                                                <td><?php echo $d['nama']; ?></td>
+                                                <td><?php echo $d['alamat']; ?></td>
+                                                <td><?php echo $d['agama']; ?></td>
+                                                <td><?php echo $d['kewarganegaraan']; ?></td>
+                                                <td><?php echo $d['status']; ?></td>
+                                                <td><?php echo $d['pendidikan']; ?></td>
+                                                <td><?php echo $d['pekerjaan']; ?></td>
+                                                <td><?php echo $d['ttl']; ?></td>
+                                                <td>
+                                                    <a href="edit.php?id=<?php echo $d['id']; ?>">EDIT</a>
+                                                    <a href="hapus.php?id=<?php echo $d['id']; ?>">HAPUS</a>
+                                                </td>
+                                            </tr>
+                                        <?php
+                                        }
+                                        ?>
                       </tbody>
                     </table>
                   </div>

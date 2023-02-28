@@ -216,6 +216,12 @@
             </div>
           </div>
         </section>
+
+        <button type="button" class="btn btn-primary ">Tambahkan Anggota Keluarga</button>
+        <h6 class="card-title mt-3 text-danger">
+                  *Masukkan Data Anggota Keluarga Pertama Sebagai Kepala Keluarga
+                </h6>
+        <!--  -->
         <form action="tambah.php" method="post">
           <section id="section_div1">
             <div class="card">
@@ -314,7 +320,7 @@
               </div>
             </div>
           </section>
-          <section id="section_div2">
+          <!-- <section id="section_div2">
             <div class="card">
               <div class="card-header">
                 <h4 class="card-title">Masukkan Data Anggota Keluarga Kedua</h4>
@@ -699,7 +705,7 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
         </form>
       </div>
       <footer>

@@ -131,7 +131,12 @@
                         <h6 class="text-muted font-semibold">
                           Data Warga
                         </h6>
-                        <h6 class="font-extrabold mb-0">112.000</h6>
+                        <?php
+                        include '../koneksi.php';
+                        $data = mysqli_query($koneksi, "SELECT COUNT(nik) FROM warga");
+                        $t = mysqli_fetch_assoc($data);
+                        ?>
+                        <h6 class="font-extrabold mb-0"><?php echo $t['COUNT(nik)']; ?></h6>
                       </div>
                     </div>
                   </div>
@@ -148,7 +153,12 @@
                       </div>
                       <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                         <h6 class="text-muted font-semibold">Data RT</h6>
-                        <h6 class="font-extrabold mb-0">183.000</h6>
+                        <?php
+                        include '../koneksi.php';
+                        $data = mysqli_query($koneksi, "SELECT COUNT(nik) FROM rt");
+                        $r = mysqli_fetch_assoc($data);
+                        ?>
+                        <h6 class="font-extrabold mb-0"><?php echo $r['COUNT(nik)']; ?></h6>
                       </div>
                     </div>
                   </div>
@@ -165,7 +175,12 @@
                       </div>
                       <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                         <h6 class="text-muted font-semibold">Data RW</h6>
-                        <h6 class="font-extrabold mb-0">80.000</h6>
+                        <?php
+                        include '../koneksi.php';
+                        $data = mysqli_query($koneksi, "SELECT COUNT(nik) FROM rw");
+                        $s = mysqli_fetch_assoc($data);
+                        ?>
+                        <h6 class="font-extrabold mb-0"><?php echo $s['COUNT(nik)']; ?></h6>
                       </div>
                     </div>
                   </div>
@@ -182,7 +197,12 @@
                       </div>
                       <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                         <h6 class="text-muted font-semibold">Surat On Proses</h6>
-                        <h6 class="font-extrabold mb-0">112</h6>
+                        <?php
+                        include '../koneksi.php';
+                        $data = mysqli_query($koneksi, "SELECT COUNT(nik) FROM pengajuan");
+                        $u = mysqli_fetch_assoc($data);
+                        ?>
+                        <h6 class="font-extrabold mb-0"><?php echo $u['COUNT(nik)']; ?></h6>
                       </div>
                     </div>
                   </div>
